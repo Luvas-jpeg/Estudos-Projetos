@@ -1,0 +1,33 @@
+/* --- O FILHO: Arruma o visual de cada card --- */
+.card-filme {
+  background-color: black;
+  width: 300px;
+  /* LARGURA FIXA É OBRIGATÓRIA AQUI */
+  border-radius: 20px;
+
+  /* Aqui dentro voltamos para COLUMN, para a foto ficar em cima do texto */
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  /* Para a imagem não vazar as bordas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Ajuste da Imagem --- */
+.lista-img {
+  width: 100%;
+  /* Ocupa a largura total do CARD (300px) */
+  height: 400px;
+  /* Altura fixa para todos ficarem iguais */
+  object-fit: cover;
+  /* Corta a imagem para preencher sem deformar */
+}
+
+/* --- Ajuste do Texto (Padding) --- */
+.conteudo {
+  padding: 15px;
+  /* Espaço para o texto não colar na borda preta */
+  color: white;
+  /* Garante que o texto fique branco */
+}

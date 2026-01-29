@@ -1,0 +1,12 @@
+<section>
+  <form>
+    <input type="text" placeholder="Escreva o nome do filme">
+    <button class="btn-pesquisar" type="button">Pesquisar</button>
+  </form>
+</section>
+<section class="container-filmes">
+  @for(movies of movieList; track $index){
+    <app-bestmovies [bestMovie]="movies"
+    ></app-bestmovies>
+  }
+</section>

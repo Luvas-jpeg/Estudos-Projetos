@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #000000;
+  --secundary-color: #D1D0D0;
+  --accent-color: #988686;
+  --shadow-color: #5C4E4E;
+
+}
+
+.btn-pesquisar {
+  padding: 10px;
+  border: solid 1px var(--primary-color);
+  background-color:white;
+  color:black;
+  border-radius: 5px;
+}
