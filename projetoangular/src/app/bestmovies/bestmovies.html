@@ -1,7 +1,11 @@
 <section class="card-filme">
 
-  <img [src]="bestMovie.photo" class="lista-img" crossorigin />
-
+  <img [src]="bestMovie.photo" class="lista-img" crossorigin /> <!--Com as informações passadas, eu posso acessar elas, eu posso acessar cada chave que está precente no array-->
+<!-- Por exemplo, eu tenho o seguinte array -> movie = [{
+ nome:"Senhor do aneis",
+ classificacao: 12,
+ avaliacao: 88,
+ data: "12/12/2008"}], eu estou acessaando cada chave, e mostrando seu valor na tela-->
   <div class="conteudo">
     <h2 class="lista-nome">{{bestMovie.nome}}</h2>
     <p class="lista-classif">Classificação: {{bestMovie.classificacao}}</p>

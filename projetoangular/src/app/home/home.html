@@ -5,11 +5,11 @@
   </form>
 </section>
 <section class="container-filmes">
-  @for(movies of movieList; track $index){
+  @for(movies of movieList; track $index){ <!-- Isso é a lógica do Angular ibutida no HTML, eu posso utilizar o For, o IF, else-->
     <app-bestmovies [bestMovie]="movies"
-    ></app-bestmovies>
+    ></app-bestmovies> <!--Aqui, eu estou utilizando a tag personalizada que criei no arquivo bestmovies, estou enviando dados da movieList para uma variável criada no bestmovies-->
   }
 </section>
 <section>
-  <a [routerLink]="['../details',BestMovies().id]">Sobre mais filmes!</a>
+  <a [routerLink]="['../details',BestMovies().id]">Sobre mais filmes!</a> <!--Aqui é a rota que estou defenindo para adicionar mais um componente que irei utilizar-->
 </section>

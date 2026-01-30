@@ -6,4 +6,4 @@ export interface BestmoviesInterface {
   data: string;
   photo: string
 
-}
+} // Essa interface, nada mais que é um modelo que estou exegindo as variáveis que irá rebecer e enviar informações

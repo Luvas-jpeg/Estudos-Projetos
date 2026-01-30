@@ -4,8 +4,8 @@ import { BestmoviesInterface } from '../interface/bestmovies';
 @Injectable({
   providedIn: 'root',
 })
-export class MoviesService {
-   movieList: BestmoviesInterface[] = [
+export class MoviesService { // Isso já é uma classe que realiza lógica do programa(lógica de negócio)
+   movieList: BestmoviesInterface[] = [ // a Interface que havia mencionado, estou falando que esta lista de objetos tem que seguri um padrão que colocquei no arquivo de Interface
     {
       id: 1,
       nome: "The Godfather",
@@ -89,10 +89,10 @@ export class MoviesService {
     }
   ]
 
-  getAllListMovie(): BestmoviesInterface[] {
+  getAllListMovie(): BestmoviesInterface[] { //Isso já é a função de buscar tudo da lista que criei acima, como pode ver, ele segue o modelo da interface
     return this.movieList
   }
-  getMovieByID(id: number): BestmoviesInterface | undefined {
-    return this.movieList.find((movie) => movie.id)
+  getMovieByID(id: number): BestmoviesInterface | undefined { // É a mesma coisa que citei acima, porém, ele segue um parametro que determinei nesta função, o id que é necessário
+    return this.movieList.find((movie) => movie.id) // Isso é o retorno da função, ele vai retorna um filme, de acordo com qual id que esta função recebeu
   }
 }

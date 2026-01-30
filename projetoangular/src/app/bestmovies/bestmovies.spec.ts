@@ -21,3 +21,4 @@ describe('Bestmovies', () => {
     expect(component).toBeTruthy();
   });
 });
+//Acho que aqui são os teste padrões que o Angular cira, para ver se o Componente está funcionando ou não?

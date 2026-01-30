@@ -5,7 +5,7 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app/app.routes';
 
 
-bootstrapApplication(App,{
+bootstrapApplication(App,{// isso é o pontapé para rodar o programa
   providers: [provideProtractorTestingSupport(), provideRouter(routes)]
 }, appConfig,)
   .catch((err) => console.error(err));
